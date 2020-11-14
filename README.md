@@ -30,3 +30,5 @@ git push heroku master
 ## Modifying the app
 
 In order to serve your own app simply replace the `iris_kmeans.ipynb` with your own Jupyter notebook or Python file declaring a Panel app and then modify the `Procfile` to start that app instead.
+
+The file `runtime.txt` specifies the python version which heroku will use to build the app. If your app requires a version other than `python-3.7.9`, first confirm [here](https://devcenter.heroku.com/articles/python-support#specifying-a-python-version) that the version is supported by heroku, and then modify `runtime.txt` accordingly.
